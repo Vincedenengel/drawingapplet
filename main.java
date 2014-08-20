@@ -6,13 +6,13 @@ public class Draw extends JApplet {
   private knoppenpaneel kpaneel;
 
   public void init() {
-    tpaneel = new tekenpaneel();
-    kpaneel = new knoppenpaneel( tpaneel );
+    tpaneel = new drawingpanel();
+    kpaneel = new buttonpanel( tpaneel );
     
-    JPanel paneel = new JPanel( new BorderLayout() );
-    paneel.add( tpaneel, BorderLayout.CENTER );
-    paneel.add( kpaneel, BorderLayout.SOUTH );
+    JPanel panel = new JPanel( new BorderLayout() );
+    panel.add( tpaneel, BorderLayout.CENTER );
+    panel.add( kpaneel, BorderLayout.SOUTH );
     
-    setContentPane( paneel );
+    setContentPane( panel );
   }
 }
