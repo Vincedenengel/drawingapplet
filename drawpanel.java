@@ -1,7 +1,7 @@
 import java.awt.*;
 import javax.swing.*;
 
-public class tekenpaneel extends JPanel {
+public class drawpanel extends JPanel {
   private boolean isDriehoekZichtbaar,
                   isRechthoekZichtbaar,
                   isCirkelZichtbaar,
